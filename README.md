@@ -17,3 +17,9 @@ Then you should start the server
 After that you can acess the site at
 
 - localhost:3000
+
+## Usage Examples
+
+<img src="img/first.gif" width="512" height="512"/>
+<img src="img/second.gif" width="512" height="512"/>
+<img src="img/third.gif" width="512" height="512"/>
