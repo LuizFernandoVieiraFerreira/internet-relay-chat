@@ -20,6 +20,6 @@ After that you can acess the site at
 
 ## Usage Examples
 
-<img src="img/first.gif" width="512" height="512"/>
-<img src="img/second.gif" width="512" height="512"/>
-<img src="img/third.gif" width="512" height="512"/>
+<img src="img/first.gif" height="512"/>
+<img src="img/second.gif" height="512"/>
+<img src="img/third.gif" height="512"/>
