@@ -18,6 +18,26 @@ After that you can acess the site at
 
 - localhost:3000
 
+## Commands
+
+These are the functionalities implemented. You can use the graphic interface to call all the actions or type them in the terminal embedded in the application. More details regarding these commands can be found [here](docs/implementation.pdf)
+
+- help
+- nick
+- leave
+- list
+- join
+- create
+- delete
+- away
+- msg
+- ban
+- kick
+- clear
+- file
+- list_files
+- get_file
+
 ## Video
 
 A basic example showing some of the things we can do can be found [here](https://www.youtube.com/watch?v=eWDcUfS-zHI&feature=youtu.be)
