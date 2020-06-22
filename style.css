@@ -1,0 +1,128 @@
+body {
+  margin-top: 30px;
+}
+
+#userFormArea,
+#menuArea,
+#groupFormArea,
+#messageArea {
+  display: none;
+}
+
+.terminal-window {
+  text-align: left;
+  width: 600px;
+  height: 360px;
+  border-radius: 10px;
+  margin: auto;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.terminal-window header {
+  background: #E0E8F0;
+  height: 30px;
+  border-radius: 8px 8px 0 0;
+  padding-left: 10px;
+}
+
+.terminal-window header .button {
+  width: 12px;
+  height: 12px;
+  margin: 10px 4px 0 0;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+.terminal-window header .button.green {
+  background: #3BB662;
+}
+
+.terminal-window header .button.yellow {
+  background: #E5C30F;
+}
+
+.terminal-window header .button.red {
+  background: #E75448;
+}
+
+.terminal-window section.terminal {
+  color: black;
+  font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
+  font-size: 11pt;
+  background: #f4f4f4;
+  padding: 10px;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  top: 30px;
+  bottom: 0;
+  overflow: auto;
+}
+
+.terminal-data {
+  display: none;
+}
+
+.prompt:focus {
+  outline: 0px solid transparent;
+}
+
+.message-terminal-window {
+  text-align: left;
+  width: 300px;
+  height: 180px;
+  border-radius: 10px;
+  margin: auto;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.message-terminal-window header .button {
+  width: 12px;
+  height: 12px;
+  margin: 10px 4px 0 0;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+.message-terminal-window header {
+  background: #E0E8F0;
+  height: 30px;
+  border-radius: 8px 8px 0 0;
+  padding-left: 10px;
+}
+
+.message-terminal-window header .button {
+  width: 12px;
+  height: 12px;
+  margin: 10px 4px 0 0;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+.message-terminal-window header .button.green {
+  background: #3BB662;
+}
+
+.message-terminal-window header .button.yellow {
+  background: #E5C30F;
+}
+
+.message-terminal-window header .button.red {
+  background: #E75448;
+}
+
+.message-terminal-window section.terminal {
+  color: black;
+  font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
+  font-size: 11pt;
+  background: #f4f4f4;
+  padding: 10px;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  top: 30px;
+  bottom: 0;
+  overflow: auto;
+}

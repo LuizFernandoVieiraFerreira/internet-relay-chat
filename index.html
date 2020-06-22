@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script
+  src="https://code.jquery.com/jquery-3.1.0.min.js"
+  integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+  crossorigin="anonymous"></script>
+	<script src="/dist/socket.io.js"></script>
+  <script src="/dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/dist/sweetalert.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+    <div id="userFormArea" class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <form id="userForm">
+					<div class="form-group text-center">
+						<input id="username" class="form-control" placeholder="Username" /><br />
+            <input id="login" type="submit" class="btn btn-primary" value="Login" />
+					</div>
+				</form>
+      </div>
+    </div>
+
+    <div id="menuArea" class="row">
+      <div>
+        <div class="terminal-window">
+          <header>
+            <div class="button green"></div>
+            <div class="button yellow"></div>
+            <div class="button red"></div>
+          </header>
+          <section class="terminal">
+              <div class="history"></div>$&nbsp;
+                <span id="terminal" class="prompt" contenteditable="true">/help</span>
+          </section>
+        </div>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Nome do Grupo</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+          </tr>
+        </thead>
+        <tbody id="groups" class="list-group">
+          <!-- grupos -->
+        </tbody>
+      </table>
+      <button id="createGroup" class="btn btn-success">Criar Grupo</button>
+    </div>
+
+    <div id="groupFormArea" class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <form id="groupForm">
+					<div class="form-group text-center">
+						<input id="groupName" class="form-control" placeholder="Group Name" /><br />
+						<input type="submit" class="btn btn-primary" value="Create" />
+					</div>
+				</form>
+      </div>
+    </div>
+
+		<div id="messageArea" class="row">
+			<div class="col-md-4">
+				<div class="well">
+					<h3>Online Users</h3>
+					<ul id="users" class="list-group">
+            <!-- lista de usuarios -->
+					</ul>
+          <input id="voltar" type="submit" class="btn btn-default" value="Voltar" />
+				</div>
+        <div class="well">
+					<h3 style="display: inline-block; margin: 0px;">Files</h3>
+					<ul id="files" style="float: right; margin: 0px;" id="users" class="list-inline">
+            <!-- lista de files -->
+					</ul><br><br>
+          <input id="inputFile" type="file"><br>
+          <button id="uploadButton" type="button" class="btn btn-default">
+            Upload
+          </button>
+				</div>
+        <div>
+          <div class="message-terminal-window">
+            <header>
+              <div class="button green"></div>
+              <div class="button yellow"></div>
+              <div class="button red"></div>
+            </header>
+            <section class="terminal">
+                <div class="history"></div>$&nbsp;
+                  <span id="message-terminal" class="prompt" contenteditable="true">/help</span>
+            </section>
+          </div>
+        </div>
+			</div>
+			<div class="col-md-8">
+				<div id="chat" class="chat">
+          <!-- lista de mensagens -->
+				</div>
+				<form id="messageForm">
+					<div class="form-group">
+						<label>Enter Message</label>
+						<textarea id="message" class="form-control"></textarea>
+						<br />
+						<input type="submit" class="btn btn-primary" value="Send Message" />
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+  <script>
+    function isSuccessfulAuthentication () {
+      if($('#username').val().length <= 50) {
+        return true;
+      } else {
+        swal({
+          title: 'Erro!',
+          text: 'Campo muito grande',
+          type: 'error',
+          confirmButtonText: 'Ok'
+        });
+        return false;
+      }
+    }
+  </script>
+
+	<script src="client.js"></script>
+  <script src="terminal.js"></script>
+</body>
+</html>
