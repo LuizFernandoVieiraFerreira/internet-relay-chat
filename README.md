@@ -20,4 +20,4 @@ After that you can acess the site at
 
 ## Video
 
-A basic example showing some of the things we can do can be found ![here](https://www.youtube.com/watch?v=eWDcUfS-zHI&feature=youtu.be)
+A basic example showing some of the things we can do can be found [here](https://www.youtube.com/watch?v=eWDcUfS-zHI&feature=youtu.be)
