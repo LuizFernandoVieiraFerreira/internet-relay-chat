@@ -18,8 +18,6 @@ After that you can acess the site at
 
 - localhost:3000
 
-## Usage Examples
+## Video
 
-<img src="img/first.gif" height="512"/>
-<img src="img/second.gif" height="512"/>
-<img src="img/third.gif" height="512"/>
+A basic example showing some of the things we can do can be found ![here](https://www.youtube.com/watch?v=eWDcUfS-zHI&feature=youtu.be)
